@@ -5,7 +5,7 @@ import pandas as pd
 import os
 import csv
 
-
+budget_data = os.path.join("Resources", "budget_data_1.csv")
 budget_data_df = pd.read_csv(budget_data, encoding="ISO-8859-1")
 budget_data_df_noHead = pd.read_csv(budget_data, encoding="ISO-8859-1", skiprows=1, header=None)
 budget_data_df
